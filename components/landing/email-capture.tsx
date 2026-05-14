@@ -8,19 +8,19 @@ const JOIN_URL =
 
 export function EmailCapture() {
   return (
-    <section className="px-6 py-24 md:py-32 bg-primary/5">
+    <section className="px-6 py-28 md:py-40 bg-primary/5">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        viewport={{ once: true, margin: "-80px" }}
         className="max-w-xl mx-auto text-center"
       >
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
+        <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-5 leading-tight">
           be the first to hold it.
         </h2>
 
-        <p className="text-muted-foreground leading-relaxed mb-8">
+        <p className="text-muted-foreground leading-relaxed mb-10">
           Join the BYOKS circle — early access, first prompts free, and notes from the founder.
         </p>
 

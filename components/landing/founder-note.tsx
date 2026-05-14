@@ -5,14 +5,14 @@ import { motion } from "framer-motion"
 
 export function FounderNote() {
   return (
-    <section id="founder-note" className="px-6 py-24 md:py-32 scroll-mt-16">
+    <section id="founder-note" className="px-6 py-28 md:py-40 scroll-mt-16">
       <div className="max-w-4xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="bg-card rounded-3xl p-8 md:p-12 shadow-sm border border-border/50"
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          viewport={{ once: true, margin: "-80px" }}
+          className="bg-card rounded-3xl p-10 md:p-16 shadow-sm border border-border/50"
         >
           <div className="grid md:grid-cols-[200px_1fr] gap-8 items-start">
             {/* Founder Photo */}
@@ -48,8 +48,12 @@ export function FounderNote() {
                 <p className="text-foreground font-medium">
                   Welcome in.
                 </p>
-                <p className="font-serif text-lg text-foreground italic">
-                  — Heda G.
+                <p
+                  className="text-foreground pt-2 leading-none"
+                  style={{ fontFamily: "var(--font-script)", fontSize: "2.75rem" }}
+                  aria-label="Signed, Heda G."
+                >
+                  Heda G.
                 </p>
               </div>
             </div>

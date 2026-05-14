@@ -96,6 +96,7 @@
 @theme inline {
   --font-sans: 'DM Sans', 'DM Sans Fallback', sans-serif;
   --font-serif: 'Cormorant Garamond', 'Cormorant Garamond Fallback', serif;
+  --font-script: 'Caveat', 'Caveat Fallback', cursive;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -142,4 +143,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-3%, -7%); }
+  20% { transform: translate(-9%, 3%); }
+  30% { transform: translate(5%, -4%); }
+  40% { transform: translate(-2%, 6%); }
+  50% { transform: translate(7%, -2%); }
+  60% { transform: translate(-6%, 5%); }
+  70% { transform: translate(3%, -5%); }
+  80% { transform: translate(-5%, 2%); }
+  90% { transform: translate(6%, 4%); }
 }
