@@ -22,7 +22,8 @@ export function FounderNote() {
                   src="/images/founder.jpg"
                   alt="Heda G., founder of BYOKS"
                   fill
-                  className="object-cover"
+                  sizes="(min-width: 768px) 192px, 160px"
+                  className="object-cover object-[center_15%]"
                 />
               </div>
               <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-secondary/40 rounded-full -z-10" />
