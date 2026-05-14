@@ -2,8 +2,14 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Privacy — BYOKS",
+  title: "Privacy",
   description: "How BYOKS handles the small amount of personal information you share with us.",
+  alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: "Privacy · BYOKS",
+    description: "Privacy, plainly. BYOKS doesn't collect emails directly — Whop handles all that.",
+  },
+  robots: { index: true, follow: true },
 }
 
 export default function PrivacyPage() {
