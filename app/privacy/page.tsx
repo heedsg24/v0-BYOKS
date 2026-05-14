@@ -27,23 +27,32 @@ export default function PrivacyPage() {
 
         <div className="space-y-8 text-foreground leading-relaxed">
           <section>
-            <h2 className="font-serif text-2xl mb-3">what we collect</h2>
+            <h2 className="font-serif text-2xl mb-3">what we collect on this site</h2>
             <p className="text-muted-foreground">
-              When you join the BYOKS list, we collect the email address you give us. That&apos;s it. We don&apos;t ask for your name, your phone number, or your sobriety story. If you reach out by email, we&apos;ll have whatever you share in that message.
+              Almost nothing. This site doesn&apos;t collect your email or any personal details directly. The only data we see is anonymous traffic information (page views, rough location, device type) via Vercel Analytics — no cookies, no tracking across other sites.
             </p>
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl mb-3">how we use it</h2>
+            <h2 className="font-serif text-2xl mb-3">when you click &ldquo;get your journal&rdquo; or &ldquo;join the circle&rdquo;</h2>
             <p className="text-muted-foreground">
-              We use your email to send you BYOKS — early access, first prompts, occasional notes from Heda. Nothing else. We don&apos;t sell, rent, or share your email with third parties for advertising.
+              Both buttons send you to Whop, our checkout and community partner. Anything you enter there — name, email, payment — is handled by Whop under{" "}
+              <a
+                href="https://whop.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:text-foreground"
+              >
+                their privacy policy
+              </a>
+              . When you complete a purchase or join, Whop shares your name and email with us so we can deliver the journal and send the notes we promised.
             </p>
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl mb-3">where it lives</h2>
+            <h2 className="font-serif text-2xl mb-3">how we use what Whop shares</h2>
             <p className="text-muted-foreground">
-              Your email is stored with our email provider (Substack) and a small amount of anonymous traffic data is collected by Vercel Analytics. Both have their own privacy policies, and both are standard tools used by independent creators.
+              We use your email and name to send you BYOKS — your journal, early access, first prompts, and occasional notes from Heda. Nothing else. We don&apos;t sell, rent, or share your information with third parties for advertising.
             </p>
           </section>
 
@@ -54,7 +63,7 @@ export default function PrivacyPage() {
               <a href="mailto:hello@byoks.co" className="underline underline-offset-4 hover:text-foreground">
                 hello@byoks.co
               </a>{" "}
-              and ask us to delete your information, and we will.
+              and ask us to delete your information, and we will. To cancel a Whop purchase or membership, manage it from your Whop account.
             </p>
           </section>
 
