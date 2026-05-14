@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export function FounderNote() {
   return (
-    <section className="px-6 py-24 md:py-32">
+    <section id="founder-note" className="px-6 py-24 md:py-32 scroll-mt-16">
       <div className="max-w-4xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -20,7 +20,7 @@ export function FounderNote() {
               <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto md:mx-0 rounded-2xl overflow-hidden">
                 <Image
                   src="/images/founder.jpg"
-                  alt="Founder of BYOKS"
+                  alt="Heda G., founder of BYOKS"
                   fill
                   className="object-cover"
                 />
@@ -39,13 +39,16 @@ export function FounderNote() {
                   BYOKS started because I couldn&apos;t find a sober space that felt like me. Not preachy. Not perfect. Just honest.
                 </p>
                 <p>
-                  Open Me When is the first of many — built for the moments that matter most.
+                  I&apos;ve been the person staring at a glass at 5pm trying to talk myself out of it, and the person who already poured one and felt the shame curl in afterward. I wanted something to hold in those moments — not a 12-step, not a course, not another guru. Just a page that met me where I was.
+                </p>
+                <p>
+                  Open Me When is the first of many. It&apos;s for the cravings, the slips, the anniversaries, and the quiet good days you don&apos;t quite trust yet. No streaks. No scoring. Just a soft place that&apos;s always waiting.
                 </p>
                 <p className="text-foreground font-medium">
                   Welcome in.
                 </p>
                 <p className="font-serif text-lg text-foreground italic">
-                  — Sarah
+                  — Heda G.
                 </p>
               </div>
             </div>
