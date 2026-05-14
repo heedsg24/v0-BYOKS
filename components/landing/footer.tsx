@@ -56,12 +56,21 @@ export function Footer() {
           Made with care. For anyone figuring it out.
         </p>
 
-        <div className="mt-4 flex justify-center gap-4 text-xs text-muted-foreground/60">
+        <div className="mt-4 flex flex-wrap justify-center items-center gap-x-4 gap-y-1 text-xs text-muted-foreground/60">
           <span>© {new Date().getFullYear()} BYOKS. All rights reserved.</span>
           <span aria-hidden="true">·</span>
           <Link href="/privacy" className="hover:text-foreground transition-colors">
             Privacy
           </Link>
+          <span aria-hidden="true">·</span>
+          <a
+            href="https://cypher.camp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors"
+          >
+            Powered by cypher.camp
+          </a>
         </div>
       </div>
     </footer>
