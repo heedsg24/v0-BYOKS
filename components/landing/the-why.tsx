@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export function TheWhy() {
   return (
-    <section className="px-6 py-24 md:py-32 bg-card">
+    <section className="px-6 py-28 md:py-40 bg-card">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

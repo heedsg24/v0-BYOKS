@@ -1,5 +1,6 @@
 import { Hero } from "@/components/landing/hero"
 import { TheWhy } from "@/components/landing/the-why"
+import { PullQuote } from "@/components/landing/pull-quote"
 import { WhatsInside } from "@/components/landing/whats-inside"
 import { WhoItsFor } from "@/components/landing/who-its-for"
 import { FounderNote } from "@/components/landing/founder-note"
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <TheWhy />
+      <PullQuote />
       <WhatsInside />
       <WhoItsFor />
       <FounderNote />
