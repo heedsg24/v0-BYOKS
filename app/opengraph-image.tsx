@@ -6,10 +6,6 @@ export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
 
 export default async function Image() {
-  const cormorantItalic = await fetch(
-    new URL("./CormorantGaramond-Italic.ttf", import.meta.url)
-  ).then((res) => res.arrayBuffer())
-
   return new ImageResponse(
     (
       <div
@@ -23,6 +19,7 @@ export default async function Image() {
           backgroundColor: "#f5f0e8",
           padding: "80px 100px",
           position: "relative",
+          fontFamily: "sans-serif",
         }}
       >
         {/* Soft sage glow top-left */}
@@ -93,15 +90,14 @@ export default async function Image() {
         >
           <div
             style={{
-              fontFamily: "Cormorant",
-              fontStyle: "italic",
               fontSize: 124,
-              fontWeight: 500,
+              fontWeight: 700,
               lineHeight: 1.02,
               color: "#2d2520",
               letterSpacing: -1,
               display: "flex",
               textAlign: "center",
+              fontStyle: "italic",
             }}
           >
             be your own kind of sober.
@@ -143,14 +139,6 @@ export default async function Image() {
     ),
     {
       ...size,
-      fonts: [
-        {
-          name: "Cormorant",
-          data: cormorantItalic,
-          style: "italic",
-          weight: 500,
-        },
-      ],
     }
   )
 }
