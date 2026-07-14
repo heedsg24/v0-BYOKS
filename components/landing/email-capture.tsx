@@ -30,7 +30,7 @@ export function EmailCapture() {
           className="rounded-full px-10 py-6 text-base font-medium bg-primary hover:bg-primary/90 transition-all duration-300 hover:shadow-lg"
         >
           <a href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-            join the circle
+            Join the Circle
           </a>
         </Button>
       </motion.div>

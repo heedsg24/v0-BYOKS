@@ -62,7 +62,7 @@ export function Hero() {
                 className="rounded-full px-8 py-6 text-base font-medium bg-primary hover:bg-primary/90 transition-all duration-300 hover:shadow-lg"
               >
                 <a href={WHOP_URL} target="_blank" rel="noopener noreferrer">
-                  get your journal
+                  Get Your Journal
                 </a>
               </Button>
 
@@ -71,7 +71,7 @@ export function Hero() {
                 onClick={scrollToFounder}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-300 underline underline-offset-4 text-base mt-2 sm:mt-3"
               >
-                read the story
+                Read the Story
               </a>
             </div>
           </motion.div>

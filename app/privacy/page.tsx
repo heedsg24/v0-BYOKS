@@ -40,7 +40,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl mb-3">when you click &ldquo;get your journal&rdquo; or &ldquo;join the circle&rdquo;</h2>
+            <h2 className="font-serif text-2xl mb-3">when you click &ldquo;Get Your Journal&rdquo; or &ldquo;Join the Circle&rdquo;</h2>
             <p className="text-muted-foreground">
               Both buttons send you to Whop, our checkout and community partner. Anything you enter there — name, email, payment — is handled by Whop under{" "}
               <a
